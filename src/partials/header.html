@@ -1,20 +1,32 @@
 <header class="header">
     <div class="container">
         <nav class="main-nav">
-            <a href="index.html" class="header-logo">
+            <a href="index.html" class="header-logo link">
                 <svg class="first-part-logo">
                     <use href="./images/sprite.svg#logo"></use>
                 </svg>
                 <span class="second-part-logo">Advanced Software Development</span>
             </a>
             <ul class="nav-list">
-                <li class="nav-list-item"><a class="nav-list-link link current" href="#">Home</a></li>
-                <li class="nav-list-item"><a class="nav-list-link link" href="#">How we work</a></li>
-                <li class="nav-list-item"><a class="nav-list-link link" href="#">Expertise</a></li>
-                <li class="nav-list-item"><a class="nav-list-link link" href="#">Portfolio</a></li>
-                <li class="nav-list-item"><a class="nav-list-link link" href="#">About us</a></li>
-                <li class="nav-list-item"><a class="nav-list-link link" href="#">Blog</a></li>
-                <li class="nav-list-item">
+                <li class="nav-list-item item">
+                    <a class="nav-list-link link current" href="#">Home</a>
+                </li>
+                <li class="nav-list-item item">
+                    <a class="nav-list-link link" href="#">How we work</a>
+                </li>
+                <li class="nav-list-item item">
+                    <a class="nav-list-link link" href="#">Expertise</a>
+                </li>
+                <li class="nav-list-item item">
+                    <a class="nav-list-link link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-list-item item">
+                    <a class="nav-list-link link" href="#">About us</a>
+                </li>
+                <li class="nav-list-item item">
+                    <a class="nav-list-link link" href="#">Blog</a>
+                </li>
+                <li class="nav-list-item item">
                     <a class="nav-list-link link" href="#">Careers</a>
                     <ul class="submenu">
                         <li class="submenu-item">
@@ -24,5 +36,10 @@
                 </li>
             </ul>
         </nav>
+        <button class="burger-btn" type="button" data-menu-button>
+            <svg class="burger-icon">
+                <use href="./images/sprite.svg#burger"></use>
+            </svg>
+        </button>
     </div>
 </header>
