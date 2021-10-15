@@ -1,0 +1,105 @@
+.technology-partner {
+  position: relative;
+
+  &-title {
+    max-width: 750px;
+  }
+  &-handler {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include screen('desktop') {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 45px;
+      padding-bottom: 10px;
+
+      &-description {
+        order: -1;
+        max-width: 572px;
+      }
+    }
+  }
+
+  &-image-thumb {
+    margin-top: 40px;
+
+    @include screen('desktop') {
+      margin-top: 0px;
+    }
+  }
+
+  &-list {
+    list-style: none;
+    font-size: 16px;
+    padding: 0;
+    margin-top: 50px;
+    counter-reset: num;
+
+    @include screen('desktop') {
+      margin-bottom: 90px;
+    }
+
+    &-item {
+      margin-left: 20px;
+      padding: 0 0 10px 40px;
+      position: relative;
+      @include font(16px, 27px);
+      counter-increment: num;
+
+      @include screen('desktop') {
+        margin-left: 50px;
+      }
+
+      &:nth-child(-n + 9)::before {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -20px;
+        width: 32px;
+        height: 32px;
+        background: transparent;
+        color: var(--accent-color);
+        text-align: center;
+        @include font(30px, 37px);
+        content: '0' counter(num);
+
+        @include screen('desktop') {
+          left: -50px;
+        }
+      }
+    }
+
+    &-item + &-item {
+      margin-top: 30px;
+
+      @include screen('desktop') {
+        margin-top: 90px;
+      }
+    }
+  }
+
+  &-button {
+    display: block;
+    width: 100%;
+    margin-top: 60px;
+    padding: 12px 59px;
+    font-weight: 600;
+    @include font(16px, 30px);
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    @include screen('desktop') {
+      position: relative;
+      margin: 0;
+    }
+
+    @include screen('desktop') {
+      margin-left: 100px;
+      width: 257px;
+    }
+  }
+}
