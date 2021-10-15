@@ -6,8 +6,9 @@
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: tomato;
+  background-color: transparent;
   border-bottom: 1px solid var(--header-border-color);
+
   @include screen('tablet') {
     height: 80px;
   }
@@ -28,6 +29,7 @@
     margin-left: 18px;
     max-width: 72px;
     @include font(9px, 13px);
+    font-weight: normal;
     text-transform: uppercase;
     color: var(--second-part-logo-primary-color);
   }
@@ -55,6 +57,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .nav-list {
@@ -69,7 +73,7 @@
   }
 
   & > .item + .item {
-    margin-left: 60px;
+    margin-left: 59px;
   }
 
   &-link {
@@ -122,11 +126,11 @@
 }
 
 .submenu {
-  //   display: none;
+  display: none;
   position: absolute;
   top: 100%;
   right: 0;
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
 
   width: 195px;
@@ -145,7 +149,6 @@
     padding-left: 30px;
     padding-right: 30px;
     color: var(--prinary-color);
-    background-color: aqua;
     font-weight: 500;
     @include font(14px, 17px);
 
