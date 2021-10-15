@@ -1,0 +1,10 @@
+.section-title {
+  font-weight: normal;
+  @include font(40px, 49px);
+
+  color: var(--primary-color);
+
+  @include screen('desktop') {
+    @include font(70px, 85px);
+  }
+}
