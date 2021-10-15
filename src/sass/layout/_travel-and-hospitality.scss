@@ -1,0 +1,87 @@
+.travel-and-hospitality {
+  &-section {
+    min-height: 1154px;
+    padding-top: 100px;
+    background-color: var(--hero-bg-color);
+    background-image: url(../images/travels-and-hospitality/michael-shannon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @include screen('desktop') {
+      padding: 191px 0;
+      min-height: 785px;
+      background-position: right;
+      background-size: 65.4vw 131.57vh;
+    }
+  }
+
+  &-title {
+    font-style: normal;
+    font-weight: 300;
+    @include font(40px, 49px);
+    color: var(--secondary-color);
+  }
+
+  &-description {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: normal;
+    @include font(16px, 27px);
+    color: var(--secondary-color);
+
+    @include screen('desktop') {
+      max-width: 632px;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &-button {
+    display: block;
+    width: 100%;
+    margin-top: 60px;
+    padding: 12px 59px;
+    font-weight: 600;
+    @include font(16px, 30px);
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: 1px solid var(--header-border-color);
+    @include screen('desktop') {
+      position: relative;
+      margin: 0;
+    }
+
+    @include screen('desktop') {
+      width: 257px;
+    }
+  }
+}
+
+.pre-title {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 30px;
+  @include font(14px, 17px);
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--secondary-color);
+
+  @include screen('desktop') {
+    margin-bottom: 40px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    // transform: translateY(-50%);
+    width: 30px;
+    height: 1px;
+    background-color: var(--accent-color);
+  }
+}

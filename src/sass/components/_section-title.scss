@@ -1,5 +1,6 @@
 .section-title {
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 300;
   @include font(40px, 49px);
 
   color: var(--primary-color);
