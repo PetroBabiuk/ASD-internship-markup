@@ -1,0 +1,95 @@
+.our-partners-say {
+  &-section {
+    background-color: var(--secondary-bg-color);
+  }
+
+  &-title {
+    margin-bottom: 50px;
+    order: 1;
+  }
+
+  &-list {
+    order: 3;
+    padding-bottom: 70px;
+
+    @include screen('desktop') {
+      padding-top: 160px;
+      padding-bottom: 170px;
+    }
+
+    &-item {
+      @include screen('desktop') {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+.buttons-handler {
+  order: 2;
+  margin-bottom: 40px;
+  display: flex;
+  width: 153px;
+  justify-content: space-between;
+
+  @include screen('desktop') {
+    order: 4;
+    margin-left: 370px;
+  }
+}
+
+.icon-prev-button,
+.icon-next-button {
+  //   display: block;
+  width: 69px;
+  height: 69px;
+  border: 1px solid var(--disactive-color);
+  border-radius: 50%;
+}
+
+.client-respond {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 500;
+  @include font(20px, 37px);
+
+  @include screen('desktop') {
+    order: 1;
+    max-width: 800px;
+    @include font(25px, 44px);
+  }
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+
+  @include screen('desktop') {
+    padding-top: 12px;
+    order: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.client-description {
+  margin-left: 20px;
+
+  @include screen('desktop') {
+    margin-top: 25px;
+    margin-left: 0;
+  }
+}
+
+.client-name {
+  font-weight: 600;
+  @include font(18px, 26px);
+  color: var(--primary-color);
+}
+
+.client-position {
+  @include font(14px, 26px);
+  color: var(--placeholder-color);
+}
