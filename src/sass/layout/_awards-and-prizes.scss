@@ -1,0 +1,36 @@
+.awards-and-prizes {
+  &-section {
+    background-color: var(--secondary-bg-color);
+
+    @include screen('desktop') {
+      & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  &-title {
+    font-weight: normal;
+    max-width: 234px;
+
+    @include screen('desktop') {
+      @include font(50px, 61px);
+      max-width: 467px;
+    }
+  }
+
+  &-list {
+    padding-top: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include screen('desktop') {
+      padding-top: 0;
+      min-width: 555px;
+      min-height: 117px;
+    }
+  }
+}
