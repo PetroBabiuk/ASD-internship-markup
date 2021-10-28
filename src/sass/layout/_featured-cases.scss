@@ -1,0 +1,81 @@
+.featured-cases {
+  &-list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @include screen('desktop') {
+      margin-top: 80px;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .item + .item {
+      margin-top: 50px;
+
+      @include screen('desktop') {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &-image-thumb {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &-title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    @include font(20px, 30px);
+    text-transform: uppercase;
+
+    @include screen('desktop') {
+      @include font(25px, 26px);
+    }
+  }
+
+  &-description {
+    font-style: normal;
+    font-weight: normal;
+    @include font(16px, 27px);
+
+    @include screen('desktop') {
+      max-width: 464px;
+      @include font(18px, 29px);
+    }
+  }
+
+  &-button {
+    display: block;
+    width: 100%;
+    padding: 12px 59px;
+    font-weight: 600;
+    @include font(16px, 30px);
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+
+    @include screen('tablet') {
+      margin: 0 auto;
+      width: 257px;
+    }
+  }
+}
+
+.flag {
+  width: 100px;
+  height: 30px;
+  padding: 8px 15px;
+  background-color: var(--secondary-bg-color);
+  font-weight: 500;
+  @include font(12px, 14px);
+  text-transform: uppercase;
+
+  color: var(--placeholder-color);
+  opacity: 0.87;
+}
