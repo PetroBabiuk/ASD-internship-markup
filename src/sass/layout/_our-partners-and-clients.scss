@@ -1,0 +1,19 @@
+.our-partners-and-clients {
+  &-title {
+    max-width: 501px;
+  }
+  &-list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+
+    @include screen('desktop') {
+      margin-top: 146px;
+      margin-bottom: 42px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
