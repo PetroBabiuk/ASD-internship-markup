@@ -21,6 +21,10 @@
     font-weight: 300;
     @include font(40px, 49px);
     color: var(--secondary-color);
+
+    @include screen('desktop') {
+      @include font(70px, 85px);
+    }
   }
 
   &-description {
