@@ -4,7 +4,7 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid tomato;
+  // outline: 1px solid tomato;
 
   @include screen('mobile') {
     width: 480px;
@@ -19,9 +19,9 @@
   }
 
   @include screen('desktop') {
-    width: 1280px;
-    padding-left: 55px;
-    padding-right: 55px;
+    width: 1260px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   .header & {
@@ -41,5 +41,10 @@
       padding-top: 239px;
       padding-bottom: 208px;
     }
+  }
+
+  .our-clients-say & {
+    display: flex;
+    flex-direction: column;
   }
 }
